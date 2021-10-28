@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+</head>
+<body>
+    <script>
+        let names=["Pratik Thapa","Hari Kumar Karki","Shyam Govind Sharma","Wilson Karki","Baladev Thapa"]
+        names.sort(function(a,b){
+            var aSplit = a.split(' ');
+            var bSplit = b.split(' ');
+
+            if(aSplit[aSplit.length - 1]>
+            bSplit[bSplit.length - 1])
+            return 1;
+            if(aSplit[aSplit.length - 1])
+            return -1;
+            return 0;
+        });
+        console.log(names);
+    </script>
+</body>
+</html>
